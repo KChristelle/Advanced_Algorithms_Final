@@ -1,5 +1,7 @@
 import unittest
 
+from decrypt import Decryption
+from encryptDecrypt import EncryptDecrypt
 from grandingStudents import gradingStudents
 from myTest import Summation
 from test_file import *
@@ -51,13 +53,14 @@ class TestSummative(unittest.TestCase):
         answer = Summation(n_value, k)
         self.assertEqual(answer, expected_answer)
 
-    # def test_array2(self):
-        # n = 80
-        # ar = [4, 5, 5, 5, 6, 6, 4, 1, 4, 4, 3, 6, 6, 3, 6, 1, 4, 5, 5, 5, 2, 7, 2, 1, 0, 9, 8, 61, 11, 2,
-        #       4, 5, 5, 5, 6, 6, 4, 1, 4, 4, 0, 6, 6, 3, 6, 1, 4, 5, 5, 5, 2, 7, 23, 1, 0, 9, 8, 61, 11, 2,
-        #       4, 5, 5, 5, 6, 6, 4, 1, 4, 4, 3, 6, 6, 3, 6, 1, 4, 5, 5, 15]
-        # answer = sock_merchant(n, ar)
-        # expect_answer = 36
-        # self.assertEqual(answer, expect_answer)
+    def test_array8(self):
+        answer = EncryptDecrypt("Plain text", 2)
+        expect_answer = "Pantxli et"
+        self.assertEqual(answer, expect_answer)
+
+    def test_array9(self):
+        answer = Decryption("Pantxli et", 2)
+        expect_answer = "Plain text"
+        self.assertEqual(answer, expect_answer)
 
 
