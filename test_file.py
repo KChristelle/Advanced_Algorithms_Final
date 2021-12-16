@@ -63,4 +63,12 @@ class TestSummative(unittest.TestCase):
         expect_answer = "Plain text"
         self.assertEqual(answer, expect_answer)
 
+    def test_array10(self):
+        answer = EncryptDecrypt("Plain text", 3)
+        expect_answer = "Pnxli etat"
+        self.assertEqual(answer, expect_answer)
 
+    def test_array11(self):
+        answer = Decryption("Pnxli etat", 3)
+        expect_answer = "Plain text"
+        self.assertEqual(answer, expect_answer)

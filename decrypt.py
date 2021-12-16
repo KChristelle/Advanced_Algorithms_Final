@@ -45,7 +45,7 @@ def Decryption(encrypted, key):
     row_check, column_check = 0, 0
     for i in columns:
 
-        # check the direction of flow
+        # check which row it is and is you can print or not
         if row_check == 0:
             print_check = 1
         if row_check == key - 1:

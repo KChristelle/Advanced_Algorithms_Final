@@ -5,7 +5,20 @@
 #
 # print(Summation(9875, 4))
 from decrypt import Decryption
-from encryptDecrypt import EncryptDecrypt
 
-print(EncryptDecrypt("Plain text", 2))
-print(Decryption("Pantxli et", 2))
+# from encryptDecrypt import EncryptDecrypt
+# #
+# print(EncryptDecrypt("Plain text", 3))
+# # print(Decryption("Pantxli et", 2))
+
+
+graph = {
+    '1': {'2': 5, '3': 15},
+    '2': {'1': 5, '3': 6},
+    '3': {'1': 15, '2': 6, '4': 6},
+    '4': {'3': 2},
+}
+
+source = '1'
+destination = '4'
+shortestReach(graph, source, destination)

@@ -12,16 +12,16 @@ def EncryptDecrypt(text_input, key):
     # Create a row check var to know when to print a character
     row_check = 0
 
-    #     Loop through text to get each letter and print in matrix
+    #  Loop through text to get each letter and print in matrix
     for i in range(len(text_input)):
         # Print character of the text into matrix, ex: matrix[0][0]
         matrix[row_check][i] = text_input[i]
         # print(matrix)
         # print(matrix)
-        # check if you are on the first row then print in first column
+        # check if you are on the first row then set checker to false
         if row_check == 0:
             print_check = 0
-        # if you are on second row then
+        # if you are on second row then set checker to true
         elif row_check == key - 1:
             print_check = 1
 
