@@ -1,8 +1,6 @@
-# from sumOfDigits import *
+# from totalSum import totalSum
+#
+# print(totalSum(1000000))
+from myTest import addition
 
-# print(SumOfDigits(9875)*4)
-
-
-from totalSum import totalSum
-
-print(totalSum(1000000))
+print(addition("21"))
