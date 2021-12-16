@@ -1,6 +1,6 @@
 # from totalSum import totalSum
 #
 # print(totalSum(1000000))
-from myTest import addition
+from myTest import Summation
 
-print(addition("21"))
+print(Summation(9875, 4))

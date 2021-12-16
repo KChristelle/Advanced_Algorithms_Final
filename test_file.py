@@ -1,6 +1,7 @@
 import unittest
 
 from grandingStudents import gradingStudents
+from myTest import Summation
 from test_file import *
 from totalSum import totalSum
 
@@ -32,6 +33,22 @@ class TestSummative(unittest.TestCase):
         grades = [4, 73, 67, 38, 33]
         expected_answer = [75, 67, 40, 33]
         answer = gradingStudents(grades)
+        self.assertEqual(answer, expected_answer)
+
+    # Test for question 3
+    def test_array6(self):
+        n_value = 148
+        k = 3
+        expected_answer = 3
+        answer = Summation(n_value, k)
+        self.assertEqual(answer, expected_answer)
+
+    # Test for question 3
+    def test_array7(self):
+        n_value = 9875
+        k = 4
+        expected_answer = 8
+        answer = Summation(n_value, k)
         self.assertEqual(answer, expected_answer)
 
     # def test_array2(self):

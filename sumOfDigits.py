@@ -20,3 +20,19 @@
 # #     # else:
 # #     #     return number % 10 + FinalSum(int(number / 10))
 # #     return incr
+
+
+# import textwrap
+#
+#
+# # Addition of function
+#
+# def addition(n, k):
+#     if len(n) == 1:
+#         return n
+#     digit_list = textwrap.wrap(n, 1)
+#     digit_list = [int(i) for i in digit_list]
+#
+#     print(digit_list)
+#     # added = n + 1
+#     # return added
