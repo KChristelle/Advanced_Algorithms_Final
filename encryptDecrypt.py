@@ -1,3 +1,5 @@
+# Algorithms summative Question 3
+
 # Function for encryption takes two args text and key
 def EncryptDecrypt(text_input, key):
     # Collect column and row values

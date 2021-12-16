@@ -1,4 +1,4 @@
-# Algorithms summative Question 2
+# Algorithms summative Question 1
 
 
 # total sum function
