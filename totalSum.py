@@ -3,5 +3,5 @@
 
 # total sum function
 def totalSum(number):
-    
+
     return sum(range(number+1))
